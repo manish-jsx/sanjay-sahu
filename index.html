@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjay Kumar Sahu - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Magic UI CSS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/@magiclabs/ui/dist/magic.min.css">
+    <!-- SadCN UI CSS CDN -->
+    <link href="https://unpkg.com/sadcn-ui/dist/sadcn-ui.min.css" rel="stylesheet">
+    <!-- Framer Motion CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/4.1.17/framer-motion.umd.js"></script>
+    <!-- Custom CSS -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Sanjay Kumar Sahu</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+                <li><a href="#projects" class="hover:text-yellow-400">Projects</a></li>
+                <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Parallax -->
+    <section id="hero" class="parallax bg-cover bg-center h-screen" style="background-image: url('https://source.unsplash.com/1600x900/?coding,technology');">
+        <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+            <div class="text-center text-white space-y-4">
+                <h2 class="text-4xl md:text-6xl font-bold">Hello, I'm Sanjay Kumar Sahu</h2>
+                <p class="text-lg md:text-2xl">A Computer Science Engineer with 2 Years of IT Experience</p>
+                <a href="#projects" class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto py-16 text-center">
+        <h3 class="text-3xl font-bold mb-6">About Me</h3>
+        <p class="text-lg">I am a passionate developer with a strong foundation in computer science. With 2 years of experience in IT, I have worked on various projects using modern web technologies.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto py-16">
+        <h3 class="text-3xl font-bold mb-6 text-center">My Projects</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project Card Example -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h4 class="text-xl font-bold mb-2">Project Title</h4>
+                <p class="text-gray-700 mb-4">Brief description of the project. This could be a web application, mobile app, or other software project.</p>
+                <a href="#" class="text-yellow-400 font-semibold">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-800 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">Contact Me</h3>
+            <p class="text-lg mb-6">Feel free to reach out for collaborations or just a friendly hello!</p>
+            <a href="mailto:sanjay@example.com" class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold">Email Me</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-500 py-8">
+        <div class="container mx-auto text-center">
+            <div class="mb-4">
+                <a href="https://linkedin.com/in/sanjay" class="mx-2 hover:text-white"><i class="fab fa-linkedin text-xl"></i></a>
+                <a href="https://github.com/sanjay" class="mx-2 hover:text-white"><i class="fab fa-github text-xl"></i></a>
+                <a href="https://twitter.com/sanjay" class="mx-2 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+            </div>
+            <p>&copy; 2024 Sanjay Kumar Sahu. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script>
+        // Framer Motion Animation Example
+        const { motion } = window['framer-motion'];
+
+        document.addEventListener("DOMContentLoaded", () => {
+            motion.animate("#hero h2", { opacity: [0, 1], y: [-50, 0] }, { duration: 1.5 });
+            motion.animate("#hero p", { opacity: [0, 1], y: [-50, 0] }, { delay: 0.5, duration: 1.5 });
+        });
+    </script>
+</body>
+</html>
